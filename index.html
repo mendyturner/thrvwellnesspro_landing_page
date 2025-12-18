@@ -327,7 +327,7 @@
     <div class="topbar">
       <a class="brand" href="#">
         <!-- Use one logo in header -->
-        <img src="THRIVE WELLNESS (2).png" alt="Thrive Wellness Logo" />
+        <img src="assets/THRIVE WELLNESS (2).png" alt="Thrive Wellness Logo" />
         <div class="tagline">Performance • Energy • Confidence</div>
       </a>
 
@@ -383,12 +383,12 @@
         </div>
 
         <div class="imgWrap">
-          <img class="bundleImg" src="Max_Starter_Kit_3.png" alt="MAX Starter Pack - 3 bottles of Syner-T" />
+          <img class="bundleImg" src="assets/Max_Starter_Kit_3.png" alt="MAX Starter Pack - 3 bottles of Syner-T" />
           <div class="bundleRow" aria-label="Includes 4 packs of 9TRO">
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
           </div>
         </div>
 
@@ -434,11 +434,11 @@
         </div>
 
         <div class="imgWrap">
-          <img class="bundleImg" src="Thrv_Starter_Pack_2.png" alt="Starter Pack - 2 bottles of Syner-T" />
+          <img class="bundleImg" src="assets/Thrv_Starter_Pack_2.png" alt="Starter Pack - 2 bottles of Syner-T" />
           <div class="bundleRow" aria-label="Includes 3 packs of 9TRO">
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
-            <img class="miniImg" src="Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
+            <img class="miniImg" src="assets/Thrv_Wellness_9TRO.png" alt="9TRO pack" />
           </div>
         </div>
 
@@ -464,8 +464,7 @@
               </select>
             </div>
 
-            <!-- Replace STRIPE_LINK_STARTER with your Stripe Payment Link -->
-            <a class="btnSmall" id="buy-starter" href="STRIPE_LINK_STARTER" target="_blank" rel="noopener">
+           
               BUY NOW
             </a>
           </div>
@@ -486,7 +485,7 @@
         <div class="imgWrap">
           <!-- You asked to use Starter_Pack-2.png for Intro Pack image.
                You provided: Thrv_Starter_Pack_2.png. If you truly have Starter_Pack-2.png, rename it or update path below. -->
-          <img class="bundleImg" src="Thrv_Starter_Pack_2.png" alt="Intro Pack - 2 bottles of Syner-T" />
+          <img class="bundleImg" src="assets/Thrv_Starter_Pack_2.png" alt="Intro Pack - 2 bottles of Syner-T" />
         </div>
 
         <div class="cardBody">
@@ -564,19 +563,18 @@
         <h2>How Pre-Orders Work</h2>
         <p class="sub">You reserve your package now. We fulfill as soon as the backend is ready.</p>
       </div>
-      <div class="pill">Secure Checkout via Stripe</div>
-    </div>
+     
 
     <div class="panel">
       <p style="margin:0;color:var(--muted)">
-        You’ll choose a package + quantity and complete checkout on Stripe (that’s where payment + address details are captured securely).
+        You’ll choose a package + quantity and complete shipping address details and we will send secure payment link to your email address .
         We’ll place your orders into the fulfillment system as soon as it’s live.
       </p>
 
       <div class="faq">
         <details>
           <summary>Do I enter my credit card on this website?</summary>
-          <p>Nope. Your payment is handled on Stripe’s secure checkout page. This site sends you there.</p>
+          <p>Nope. Your payment is handled  via a secure checkout link that will land in your email box within days.</p>
         </details>
         <details>
           <summary>When will my order be submitted/fulfilled?</summary>
@@ -600,6 +598,300 @@
       <img src="THRIVE WELLNESS (1).png" alt="Thrive Wellness Logo" />
     </footer>
   </div>
+<!-- ========= PRE-ORDER FORM ========= -->
+<section id="preorder" class="panel" style="margin-top:22px;">
+  <div class="sectionTitle" style="margin:0 0 14px;">
+    <div>
+      <h2 style="margin:0;">Pre-Order Form</h2>
+      <p class="sub" style="margin:6px 0 0;">Lock in bundle pricing with a promo code. We’ll email your payment link within 72 hours.</p>
+    </div>
+    <div class="pill">No card info collected</div>
+  </div>
+
+  <form id="preorderForm">
+    <div class="formGrid">
+      <div class="field">
+        <label for="bundle">Bundle</label>
+        <select id="bundle" name="bundle" required>
+          <option value="MAX Starter Pack">MAX Starter Pack (3 Syner-T + 4x 9TRO)</option>
+          <option value="Starter Pack">Starter Pack (2 Syner-T + 3x 9TRO)</option>
+          <option value="Intro Pack">Intro Pack (2 Syner-T)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="qty">Quantity</label>
+        <select id="qty" name="quantity" required>
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="promo">Promo Code</label>
+        <input id="promo" name="promo_code" type="text" placeholder="Enter promo code" />
+        <div class="hint" id="promoHint">Enter your code to unlock special bundle pricing.</div>
+      </div>
+
+      <div class="field">
+        <label>Pricing</label>
+        <div class="priceBox" id="priceBox">
+          <div class="priceLine"><span>Today’s Price</span><b id="priceNow">$199</b></div>
+          <div class="priceLine muted"><span>Normally</span><span id="priceWas"><s>$235.51</s></span></div>
+          <div class="priceLine small"><span>Shipping</span><b>FREE</b></div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="first">First Name</label>
+        <input id="first" name="first_name" required />
+      </div>
+
+      <div class="field">
+        <label for="last">Last Name</label>
+        <input id="last" name="last_name" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@company.com" />
+      </div>
+
+      <div class="field">
+        <label for="mobile">Mobile #</label>
+        <input id="mobile" name="mobile" type="tel" required placeholder="(###) ###-####" />
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:14px; background:rgba(255,255,255,.02); box-shadow:none;">
+      <div class="kicker">Shipping Address</div>
+      <div class="formGrid" style="margin-top:10px;">
+        <div class="field wide">
+          <label for="ship1">Address Line 1</label>
+          <input id="ship1" name="shipping_address1" required />
+        </div>
+        <div class="field wide">
+          <label for="ship2">Address Line 2</label>
+          <input id="ship2" name="shipping_address2" />
+        </div>
+        <div class="field">
+          <label for="shipCity">City</label>
+          <input id="shipCity" name="shipping_city" required />
+        </div>
+        <div class="field">
+          <label for="shipState">State</label>
+          <input id="shipState" name="shipping_state" required />
+        </div>
+        <div class="field">
+          <label for="shipZip">Zip</label>
+          <input id="shipZip" name="shipping_zip" required />
+        </div>
+        <div class="field">
+          <label for="shipCountry">Country</label>
+          <input id="shipCountry" name="shipping_country" value="USA" required />
+        </div>
+      </div>
+
+      <div class="fine" style="margin-top:10px;">
+        <b>* ALL PACKAGES COME WITH FREE SHIPPING *</b>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn" type="submit" id="submitBtn">Submit Pre-Order</button>
+      <div class="fine" id="formFine">
+        After you submit, you’ll see a confirmation message and we’ll email your payment link within 72 hours.
+      </div>
+    </div>
+  </form>
+
+  <div id="thankYou" class="thankYou" style="display:none;">
+    <h3 style="margin:0 0 8px;">You’re in! 🎉</h3>
+    <p style="margin:0 0 10px; color:var(--muted);">
+      Thank you for supporting your <b>health</b>, <b>wellness</b>, <b>energy</b>, and <b>vitality</b> — future-you is already high-fiving you.
+      We’ll send your secure payment link to <b id="tyEmail"></b> within <b>72 hours</b>.
+    </p>
+    <p class="fine" style="margin:0;">
+      Tip: check spam/promotions folders if you don’t see it (email providers love “helpfully” hiding the good stuff).
+    </p>
+  </div>
+</section>
+
+<style>
+  .formGrid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:12px;
+  }
+  .field{display:flex; flex-direction:column; gap:6px;}
+  .field label{font-size:12px; font-weight:900; color:var(--accent2); letter-spacing:.08em; text-transform:uppercase;}
+  .field input, .field select{
+    background: rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.10);
+    color: var(--text);
+    border-radius: 12px;
+    padding:12px 12px;
+    outline:none;
+  }
+  .field input::placeholder{color:rgba(255,255,255,.45)}
+  .wide{grid-column: span 2;}
+  .hint{font-size:12px; color:var(--muted)}
+  .priceBox{
+    border:1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.03);
+    border-radius: 14px;
+    padding:12px;
+  }
+  .priceLine{display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin:6px 0;}
+  .priceLine b{font-size:18px}
+  .priceLine.muted{color:var(--muted)}
+  .priceLine.small b{font-size:14px; color:var(--good)}
+  .actions{display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-top:16px;}
+  .thankYou{
+    margin-top:16px;
+    border:1px solid rgba(57,217,138,.35);
+    background: rgba(57,217,138,.08);
+    border-radius: 16px;
+    padding: 14px 14px;
+  }
+  @media (max-width: 980px){
+    .formGrid{grid-template-columns: 1fr;}
+    .wide{grid-column: span 1;}
+  }
+</style>
+
+<script>
+  // ====== CONFIG ======
+  const WEBHOOK_URL = "MAKE_WEBHOOK_URL_HERE"; // Make.com / serverless endpoint
+
+  // Promo codes that unlock special pricing.
+  // Add/adjust codes as needed (case-insensitive).
+  const PROMO_CODES = {
+    "THRIVE199": true,
+    "LAUNCH": true,
+    "VITALITY": true
+  };
+
+  // Special bundle pricing (unlocked ONLY when valid promo code is entered)
+  const SPECIAL = {
+    "MAX Starter Pack": { now: 199.00, was: 235.51 },
+    "Starter Pack":     { now: 139.00, was: 161.65 },
+    "Intro Pack":       { now:  99.00, was: 119.86 }
+  };
+
+  // If no promo code, you can either:
+  // A) show "Regular pricing" (set it here), or
+  // B) show "Enter promo code to unlock pricing" (set now=null)
+  // I’m setting a “promo required” UX so the special pricing is clearly tied to the code.
+  const REGULAR_DISPLAY = {
+    "MAX Starter Pack": { now: null, was: null },
+    "Starter Pack":     { now: null, was: null },
+    "Intro Pack":       { now: null, was: null }
+  };
+
+  // ====== UI HELPERS ======
+  const bundleEl = document.getElementById("bundle");
+  const qtyEl = document.getElementById("qty");
+  const promoEl = document.getElementById("promo");
+  const promoHint = document.getElementById("promoHint");
+
+  const priceNowEl = document.getElementById("priceNow");
+  const priceWasEl = document.getElementById("priceWas");
+
+  function money(n){
+    return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(n);
+  }
+
+  function isPromoValid(code){
+    if(!code) return false;
+    const normalized = String(code).trim().toUpperCase();
+    return !!PROMO_CODES[normalized];
+  }
+
+  function updatePricing(){
+    const bundle = bundleEl.value;
+    const qty = parseInt(qtyEl.value || "1", 10);
+    const promo = promoEl.value;
+
+    const valid = isPromoValid(promo);
+    const pricing = valid ? SPECIAL[bundle] : REGULAR_DISPLAY[bundle];
+
+    if(valid){
+      promoHint.textContent = "Promo applied ✅ Special bundle pricing unlocked.";
+      promoHint.style.color = "var(--good)";
+      const total = pricing.now * qty;
+      priceNowEl.textContent = money(total);
+      priceWasEl.innerHTML = `<s>${money(pricing.was * qty)}</s>`;
+    } else {
+      promoHint.textContent = "Enter a valid promo code to unlock special bundle pricing.";
+      promoHint.style.color = "var(--muted)";
+      priceNowEl.textContent = "—";
+      priceWasEl.innerHTML = "—";
+    }
+  }
+
+  bundleEl.addEventListener("change", updatePricing);
+  qtyEl.addEventListener("change", updatePricing);
+  promoEl.addEventListener("input", updatePricing);
+  updatePricing();
+
+  // ====== SUBMIT ======
+  const form = document.getElementById("preorderForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const thankYou = document.getElementById("thankYou");
+  const tyEmail = document.getElementById("tyEmail");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const promo = promoEl.value;
+    if(!isPromoValid(promo)){
+      promoEl.focus();
+      promoHint.textContent = "Promo code required for special bundle pricing. Please enter a valid code.";
+      promoHint.style.color = "var(--accent2)";
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting…";
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    data.timestamp = new Date().toISOString();
+    data.promo_valid = true;
+
+    // calculated totals
+    const bundle = bundleEl.value;
+    const qty = parseInt(qtyEl.value || "1", 10);
+    data.unit_price = SPECIAL[bundle].now;
+    data.unit_price_was = SPECIAL[bundle].was;
+    data.total_price = +(SPECIAL[bundle].now * qty).toFixed(2);
+    data.total_price_was = +(SPECIAL[bundle].was * qty).toFixed(2);
+
+    try{
+      const res = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if(!res.ok) throw new Error("Webhook error");
+
+      // Success UI
+      form.style.display = "none";
+      tyEmail.textContent = data.email;
+      thankYou.style.display = "block";
+      window.location.hash = "#preorder";
+    } catch(err){
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit Pre-Order";
+      promoHint.textContent = "We hit a snag submitting your pre-order. Please try again in a moment.";
+      promoHint.style.color = "var(--accent2)";
+      console.error(err);
+    }
+  });
+</script>
 
   <script>
     // Keep it simple: quantity adds a querystring you can read later,
