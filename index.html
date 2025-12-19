@@ -168,7 +168,18 @@
       color: var(--accent2);
       white-space:nowrap;
     }
-    .imgWrap{
+    /* Forces all cards to align content consistently */
+.imgWrap.fixed {
+  height: 300px;                 /* adjust if needed */
+  display: flex;
+  align-items: flex-end;         /* keeps images bottom-aligned */
+  justify-content: center;
+}
+
+.imgSlot {
+  width: 100%;
+}
+.imgWrap{
       padding:8px 16px 6px;
     }
     .bundleImg{
